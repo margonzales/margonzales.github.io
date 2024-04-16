@@ -1,0 +1,340 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/TechnicalDocumentation.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Web Application Development</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Course Outline</a></li>
+        <li>
+          <a class="nav-link" href="#What_you_should_already_know"
+            >Overview of Web Technologies</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#JavaScript_and_Java"
+            >Git</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Hello_world">Git: Funtionality Overview</a></li>
+        <li><a class="nav-link" href="#Variables">HTML Elements</a></li>
+        <li>
+          <a class="nav-link" href="#Declaring_variables"
+            >Introduction to HTML5, CSS and JavaScript</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Variable_scope">10 Advanced Git Commands</a></li>
+        <li><a class="nav-link" href="#Constants">Windows Subsyten for Linux S</a></li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>
+            Web Application Development involves structuring the content
+            in a logical and progressive manner, covering key concepts and skills necessary 
+            for developing web applications. Below is a sample course outline that you can
+            customize based on the specific technologies, tools, and programming languages
+            you intend to cover. This outline assumes a basic understanding of HTML, CSS, and 
+            JavaScript.  
+          </p>
+
+          <p>
+            In addition to the foundational knowlwdge of HTML, CSS, and JavaScript, it's essential 
+            to delve into more advanced topics like server-sode programming, databases, and frameworks.
+            Exploring backend technologies such as Node.js and Ruby on Rails allows developers to create 
+            dynamic and interactive web application.
+          </p>
+          <ul>
+            <li>
+              Client-side JavaScript extends the core language by supplying
+              objects to control a browser and its Document Object Model (DOM).
+              For example, client-side extensions allow an application to place
+              elements on an HTML form and respond to user events such as mouse
+              clicks, form input, and page navigation.
+            </li>
+            <li>
+              Server-side JavaScript extends the core language by supplying
+              objects relevant to running JavaScript on a server. For example,
+              server-side extensions allow an application to communicate with a
+              database, provide continuity of information from one invocation to
+              another of the application, or perform file manipulations on a
+              server.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="What_you_should_already_know">
+        <header>Overview of Web Technologies</header>
+        <article>
+          <p>This guide assumes you have the following basic background:</p>
+
+          <ul>
+            <li>
+              <b>Fundametals:</b> Web technologies encompass HTML, CSS, and JavaScript,
+              forming the basis for creating web content and interactivity.
+            </li>
+            <li>
+              <b>Backend Developmet:</b> Technologies like Node.js, Python, and Ruby on 
+              Rails power the server-side logic and data management of web applications.
+            </li>
+            <li>
+              <b>Database and APIs:</b> Relational and NoSQL database store and manage data, while 
+              APIs facilitate communication between different software systems for 
+              enhanced functionality.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="JavaScript_and_Java">
+        <header>Git</header>
+        <article>
+          <p>
+            Git is a free and open source distributed version control system
+            designed to handle everything from small to very large projects with speed and efficiency.
+          </p>
+
+          <p>
+            Git is easy to learn and has a tiny footprint with lightning fast performance.
+            It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like cheap
+            local branching, convinient staging area, and multiple workflows.
+          </p>
+          <p>
+            When you're done with the installation, you can now test to see
+            if git works in yor system.
+            <ul>
+              <li>Open a terminal or command prompt</li>
+              <li>Type <b>git</b> and press enter</li>
+              <li>if you see the image below, congratulations, you have installed git 
+                in yor computer.
+              </li>
+            </ul>
+            <code>
+              'git help -a 'git help -g' list available sub commands and some 
+              concept guides. See 'git help <command>' or git help <concept>' 
+              to read about a specific subcommand or concept.
+              See 'git help git' for an overview of the system.
+            </code>
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Hello_world">
+        <header>Git: Functionality Overview</header>
+        <article>
+          Your nect step involves cloning your repository. This action creates a local copy of the 
+          repository on your machine, allowing you to work on the project's files and collaborate efficiently.
+          <ul><li>Open cmd or terminal or any of your preferred CLI</li></ul>
+          <code
+            >Microdoft Windows [Version 10.0.22631.2861]
+            (c) Microsoft Corporation. All rights reserved.
+
+            C:\Users\PC>
+          </code>
+          <ul><li>Select the best location for you to clone. In this example, I cloned it on drive C:
+            inside folder users/pc. Remember the directory structure you learned in Platform Technologies.
+            Type the command git clone
+          </li></ul>
+          <code>
+            https://github.com/your username/ repository name.git 
+          </code>
+          <code>
+            C:\Users\PC>git clone https://github.com/primusr/7100139-WebApp.git
+            Cloning into '7100139-WebApp'...
+            remote: Enumerating objects: 19, done.
+            remote: Counting objects: 100% (19/19), done.
+            remote: Compressing objects: 100% (16/16), done.
+            remote: Total 19 (delta 4), reused 14 (delta 2), pack-reused 0
+            Receiving objects: 100% (19/19), 17.16 Kib | 3.43 MiB/s, done.
+            Resolving deltas: 100% (4/4), done.
+          </code>
+          <ul><li>If you see the image above, you have successfully cloned your repository.
+            Remember that a new folder is created which is your repository name. Don't forget 
+            to move inside that folder before issuing the git commands later.
+
+            Change the directory by typing <code>cd [repository name]</code> then type <code>git status</code>
+          </li></ul>
+          <ul><li>Add any file in your repository, preferably a text file. Then type git status
+            again. It will display the new files as untracked files. You can now oush (upload) it in your 
+            repository.
+          </li></ul>
+          
+
+        </article>
+      </section>
+      <section class="main-section" id="Variables">
+        <header>HTML Elements</header>
+        <p>
+          HTML (Hypertext Markup Language) elements are the building blocks of web pages,
+          defining thet structure and content of documents displayed in web browsers. These 
+          elemets are represented by tags encolsed in angle brackets <b>(<>),</b> with most 
+          elements consisting of an opening tag, content, and a closing tag.
+        </p>
+        <p>
+          <ul>
+          <li><b>Opening Tag:</b> An HTML element typically begins with an opening tag, which specifies the 
+          type of element being used. For example, <'p'> represents a paragraph element,
+          while <'h1'> denotes a heading element.</li>
+          <li><b>Content:</b> The content of an HTML element is the information or media contained within 
+          the element's opening and closing tags. This content can include text, images, links, links,
+          lists, and other elements nested within.</li>
+          <li><b>Closing Tag:</b>In most cases, HTML elements require a closing tag to mark the end of the 
+          element. Closing tags mirror opening tags but include a forward shalsh <b>(/)</b> before the 
+          elements type. For instance, <b>'</p>'</b> indicates the end of a paragraph element.</li>
+          </ul>
+        </p>
+        <p>
+          HTML elements can be nested within one another to create complex document structures,
+          with each element contributing to the overall layout and functionality of the webpage.
+          Understanding how to use HTML elements effectively is essential for web developers to 
+          create well-structured, accessible, and visually appealing web pages. 
+        </p>
+      </section>
+      <section class="main-section" id="Declaring_variables">
+        <header>Introduction to HTML5, CSS and JavaScript</header>
+        <article>
+          <b>HTML5 (Hypertext Markup Language):</b>
+          <p>
+            HTML is the standard markup language for building web pages, and HTML5 represents its 
+            latest version, bringing forth enhancements and new features. It offers tags and 
+            attributes to define diverse elements on webpage, encompassing headings, paragraphs, images, 
+            links, forms, and beyond. HTML5 introduces semantically rich elements like <b><'header'>, <'nav'>, 
+            <'article'>, <'section'>, <'footer'>,</b> enhancing the structural clarity of web content.
+          </p>
+
+          <b>CSS (Cascading Style Sheets):</b>
+          <p>
+            CSS is used to style and layout the visual presentation of HTML documents.
+            It allows you to control the colors, fonts, spacing, and positioning of elements on a web page.
+            CSS is applied either internally within an HTML document, externally in a separate stylesheet file, or inline within HTML tags.
+          </p>
+
+          <b>JavaScript</b>
+          <p>
+            JavaScript is a versatile scripting language pivotal for imbuing web pages with dynamic and interactive functionality. 
+            It empowers developers to manipulate HTML content and structure, process user input, and facilitate communication with servers via Ajax. 
+            Widely employed for crafting diverse features such as sliders, form validation, pop-up messages, and beyond, JavaScript offers immense flexibility. 
+            It can be seamlessly integrated directly within HTML documents or linked externally, providing developers with various deployment options tailored to their project needs.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Global_variables">
+        <header>10 Advanced Git Commands</header>
+        <article>
+          <b>1. Add & Commit</b>
+          <p>
+            You have added and committed the files this way multiple times, 
+            but what if I tell you it can be done in one line with the `-am` flag?
+          </p>
+          <code>
+            $ git add .
+            $ git commit -m "new project"
+          </code>
+          <p>
+            Try this instead, and it will add the file changes 
+            and create the commit using the message.
+          </p>
+          <code>
+            $ git commit -am "new project"
+
+            [master 17d7675] new project
+            4 files changed, 2 intersections(+), 1 deletion(-)
+          </code>
+          <b>2. Amend</b>
+          <p>
+            You can rename your current commit message using the `--amend` flag and write the new message. 
+            This will help you with accidental messages.
+          </p>
+          <code>
+            $ git commit --amend -m "Love"
+
+            [master 7b7f891] Love
+            Date: Mon Jan 22 17:57:58 2024 +0500
+            4 files changed, 2 insertions(+), 1 deletion(-)
+          </code>
+          <p>
+            You can include additional changes to the current commit before pushing it to the remote repository. 
+            To do so, you need to add the file changes and then commit using the `--amend` flag. To retain the previous commit message,
+            simply use the `--no-edit` flag.
+          </p>
+          <code>
+            $ git add . 
+            $ git commit --amend --no-edit
+
+            [master f425059] Love
+            Date: Mon Jan 22 17:57:58 2024 +0500
+            6 files changed, 2 insertions(+), 34 deletions(-)
+          </code>
+          <b>3. Revert</b>
+          <p>To undo a commit in Git, you can use the `revert` command. However, this command does not remove any commits. Instead, 
+            it creates a new commit that undoes the changes made by the original commit.
+
+            We will use the `log` with `--oneline` flag to view commit history in a shorter form.</p>
+
+          <code>
+            f425059 (HEAD -> master, origin/master) Love
+            8f184d5 first commit
+          </code>
+          To revert to a previous commit, we use the `git revert` command followed by the commit ID.
+          This creates a new commit with the changes from the previous commit.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Constants">
+        <header>Windows Subsystem for Linux S</header>
+        <article>
+          <p>
+            <b>List of Commands</b>
+            <li>Installs Linux on your computer</li>
+            <code>wsl --install</code>
+            <li>Opens Linux in your terminal</li>
+            <code>wsl</code>
+            <li>Returns to command prompt in windows</li>
+            <code>logout or exit</code>
+            <li>Clears the terminal screen</li>
+            <code>clear</code>
+            <b>Apache Commands</b>
+            <li>Updates Linux before installation of Apache</li>
+            <code>sudo apt update</code>
+            <li>Upgrades Linux</li>
+            <code>sudo apt upgrade</code>
+            <li>Installs Apache Server</li>
+            <code>sudo apt-get install apache2</code>
+            <li>Starts Apavhe Server</li>
+            <code>sudo service apache2 start</code>
+            <li>Stops Apache Server</li>
+            <code>sudo service apache 2 stop</code>
+            <b>Apache Setup</b>
+            <li>Open text editor</li>
+            <li>Make folder writable</li>
+            <li>Enable site look for document root and change it your
+              desired folder to run in localhost
+            </li>
+            <li>Check if apache is running</li>
+            <li>Restert Apache. You need to this evevry time you change
+              document root. The refresh your browser to update the output.
+            </li>
+          </p>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <ul>
+            <li>
+              All the documentation in this page is taken from
+              <a
+                href="https://primusr.notion.site/Web-Application-Development-c213cf6dbd834f6f8bcc2d02746209db?p=d260f8306e014933a6b76d65bef10be5&pm=s"
+                target="_blank"
+                >PNS-WAD</a
+              >
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
